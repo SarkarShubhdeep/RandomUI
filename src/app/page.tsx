@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Search, Plus, Layers, Box, Layout, Type } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { ModeToggle } from "@/components/mode-toggle";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -102,10 +103,7 @@ export default function Home() {
                 />
               </div>
               <div className="flex items-center gap-2">
-                <Button>
-                  <Plus className="mr-2 h-4 w-4" />
-                  New Component
-                </Button>
+                <ModeToggle />
               </div>
             </div>
           </div>
