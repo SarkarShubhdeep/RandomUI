@@ -80,7 +80,9 @@ export default function Home() {
                   </Button>
                 </CollapsibleTrigger>
                 <CollapsibleContent className="pl-6 space-y-1 mt-1">
-                   <Button variant="ghost" size="sm" className="w-full justify-start">Comp 1</Button>
+                   <Link href="/ticket-list-item" passHref>
+                     <Button variant="ghost" size="sm" className="w-full justify-start">Ticket list item</Button>
+                   </Link>
                    <Button variant="ghost" size="sm" className="w-full justify-start">Comp 2</Button>
                    <Button variant="ghost" size="sm" className="w-full justify-start">Comp 3</Button>
                 </CollapsibleContent>
