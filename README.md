@@ -1,4 +1,4 @@
-# RandomKitUI
+# RandomUI
 
 A premium, design-first component storage built with the latest 2026 Tech Stack.
 

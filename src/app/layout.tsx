@@ -9,7 +9,7 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "RandomKitUI",
+  title: "RandomUI",
   description: "A premium storage for your UI components.",
 };
 
