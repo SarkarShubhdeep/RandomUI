@@ -44,7 +44,7 @@ export default function Home() {
               <div className="flex h-6 w-6 items-center justify-center rounded-md bg-primary text-primary-foreground">
                 <Box className="h-4 w-4" />
               </div>
-              <span>RandomKitUI</span>
+              <span>RandomUI</span>
             </div>
           </div>
           <ScrollArea className="flex-1">
@@ -89,7 +89,7 @@ export default function Home() {
                 </SheetTrigger>
                 <SheetContent side="left">
                    {/* Mobile Sidebar Content */}
-                   <div className="py-4 font-semibold">RandomKitUI</div>
+                   <div className="py-4 font-semibold">RandomUI</div>
                 </SheetContent>
               </Sheet>
               
