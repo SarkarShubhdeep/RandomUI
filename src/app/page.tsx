@@ -12,8 +12,13 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
+import Image from "next/image";
+import LogoDark from "@/assets/logo-randomui-dark.svg";
+import LogoLight from "@/assets/logo-randomui-light.svg";
+import { useTheme } from "next-themes";
 
 export default function Home() {
+  const { theme } = useTheme();
   const container = {
     hidden: { opacity: 0 },
     show: {
@@ -29,6 +34,7 @@ export default function Home() {
     show: { y: 0, opacity: 1 }
   };
 
+
   return (
     <div className="min-h-screen bg-background text-foreground selection:bg-primary/20">
       {/* Background Gradients */}
@@ -42,10 +48,13 @@ export default function Home() {
         <aside className="hidden w-64 flex-col border-r bg-background/50 backdrop-blur-xl md:flex">
           <div className="flex h-14 items-center border-b px-6">
             <div className="flex items-center gap-2 font-semibold tracking-tight">
-              <div className="flex h-6 w-6 items-center justify-center rounded-md bg-primary text-primary-foreground">
-                <Box className="h-4 w-4" />
-              </div>
-              <span>RandomUI</span>
+
+                {/* if theme is dark then show dark logo else show light logo */}
+                {theme === "light" ? (
+                  <Image src={LogoLight} alt="Logo" height={32} />
+                ) : (
+                  <Image src={LogoDark} alt="Logo" height={32} />
+                )}
             </div>
           </div>
           <ScrollArea className="flex-1">
